@@ -1,0 +1,82 @@
+Usefull commands:
+
+ssh user@<ipaddress>
+cd                                              change directory (empty returns to ~) 
+    .                                           current
+    ..                                          level up
+    ~                                           home
+    /                                           root
+    - 					                        previous path
+
+which                                           path to command source
+whoami                                          current user 
+pwd                                             current working directory
+ls -lah                                         complete display directory's content with details
+tree -L 2                                       shows dir tree for depth of 2
+
+htop                                            resource usage and processes
+ps -aux					                        processes
+
+mkdir                                           create directory
+    -p projects/work/pipes                      creates directory with parent directories if needed
+cp filename filename	                        copy file
+cp filename directory	                        copy file to dir
+cp -r dir dir 			                        copy with content
+mv 						                        similar as cp but move
+mv -i what where		                        prompting to overwrite
+ip -a                                           all network info
+nano 					                        text editor, much better than vi(m)
+touch filename			                        creating new file
+rm -i 					                        prompts for removing
+rm -r					                        subdirectories
+rmdir					                        deleting directory with prompting if it is not empty
+
+command -v commandname	                        where is the command - same as which but more portable and correct return code
+    cd					                        - it is shell built in so it is not in separated binary so command - v return just cd
+type cd 				                        = cd is a shell builtin
+type mkdir				                        mkdir is hashed (/usr/bin/mkdir)
+man						                        manual for command man 8 passwd for level 8
+man -k keyword			                        do not remember the exact command name  
+help 					                        displays help page for command
+
+find where -name "name"                         find by name
+find where -type d -name "name" -size +10M		find directory
+locate					                        faster than find but less accurate (must 'sudo updatedb' before using)
+grep <what>	<where>		                        searching
+    -r                                          recursively
+    -v                                          does not contain phrase
+    -i                                          ignore case
+    -c                                          count occurences
+    -B 2                                        show two lines before a occurence
+    -A 2                                        show two lines after a occurence
+    -C 2                                        show two lines around a occurence
+    -E                                          support for extended characters (instead of escaping you can search it directly a\+b => a+b) 
+
+chmod                                           change file flags 
+chown                                           change owner of the file
+
+history                                         shows history of commands
+sudo !!                                         previous command with root privilegues
+date                                            shows date
+
+file                                            file information, like if it is executable.
+stat                                            file statistics
+wc                                              word count - lines words chars route
+    -l                                          lines count only
+    -w                                          words count only
+
+du                                              disk usage
+    -sh <path>                                  directory stats (sumarize, human readable)
+    --max-depth=1                               disk usage of those files/directories in directory
+df                                              disk free - how much space is left on each drive
+
+cat                                             file content or more files
+less                                            file content with paging
+head                                            start of the file
+tail                                            end of the file
+    -f                                          follow new lines
+
+PACKAGE MANIPULATION
+apt install             
+apt update 
+apt upgrade

@@ -1,0 +1,8 @@
+/var    - items changing in time
+/var/log    - logs
+/etc    - config files
+/etc/os-version - os version details
+/home   - user owned files 
+/dev    - devices
+/mnt    - storage (filesystems mounted)
+/tmp    - temporary files

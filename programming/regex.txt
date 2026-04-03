@@ -1,0 +1,17 @@
+^   - line starts with
+$   - line ends with
+.   - 1 any character
+?   - 1 or none character
+*   - 0 or more 
++   - 1 or more
+{n} - n occurences
+{n,} - at least n occurences
+{n,m} - between n and m occurences
+[0-9]   - any 1 from list
+[^abc]   - any despite of a, b, c
+[[:digit:]]	numbers
+[[:alpha:]]	characters
+[[:alnum:]]	characters + numbers
+[[:space:]]	spaces, tabs
+[[:lower:]]	lowercase characters
+[[:upper:]]	uppercase characters

@@ -1,0 +1,7 @@
+/<what>   - find
+n   next find
+N   previous find
+arrows
+space, f    next page
+b   previous page
+q   quit

@@ -1,0 +1,85 @@
+
+Audio
+-----------
+audacity    - record audio and edit
+ardour      - mixing
+
+
+Browser
+-----------
+Firefox
+Brave
+
+
+Drawing
+-----------
+GIMP
+Inkscape
+
+
+Email client
+-----------
+Thunderbird
+
+
+File manager
+-----------
+Double commander
+
+
+Password manager
+-----------
+Bitwarden
+
+
+PDF editor
+-----------
+Omni tools
+scribus
+PDFsam
+Libre office
+
+
+Photo editing
+-----------
+DigiCam
+Showfoto
+
+
+Player
+-----------
+VLC
+
+
+Programming
+-----------
+VS codium
+Postman
+MongoDbCompass
+
+
+Recording
+-----------
+OBS Studio        - record video audio screen
+
+
+Scanning tools
+-----------
+Document scanner
+Xsane
+
+
+System tools
+-----------
+Monitor     - HW monitoring
+
+
+Video editor
+-----------
+KDElive
+Openshot
+
+
+Virtual machines - Desktops
+-----------
+Virtual box
