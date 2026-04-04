@@ -34,10 +34,10 @@ Bitwarden
 
 PDF editor
 -----------
-Omni tools
-scribus
-PDFsam
+Scribus
 Libre office
+Omni tools
+PDFsam
 
 
 Photo editing

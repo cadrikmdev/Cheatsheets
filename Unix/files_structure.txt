@@ -2,7 +2,11 @@
 /var/log    - logs
 /etc    - config files
 /etc/os-version - os version details
+/etc/password - users details
+/etc/shadow - hashed users passwords
+/etc/group - all groups in the system
 /home   - user owned files 
 /dev    - devices
 /mnt    - storage (filesystems mounted)
 /tmp    - temporary files
+/usr/bin    - commands for user

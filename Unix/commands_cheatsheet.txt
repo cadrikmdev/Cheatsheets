@@ -52,9 +52,6 @@ grep <what>	<where>		                        searching
     -C 2                                        show two lines around a occurence
     -E                                          support for extended characters (instead of escaping you can search it directly a\+b => a+b) 
 
-chmod                                           change file flags 
-chown                                           change owner of the file
-
 history                                         shows history of commands
 sudo !!                                         previous command with root privilegues
 date                                            shows date
@@ -76,7 +73,28 @@ head                                            start of the file
 tail                                            end of the file
     -f                                          follow new lines
 
-PACKAGE MANIPULATION
+PACKAGE MANIPULATION (deb)
 apt install             
 apt update 
 apt upgrade
+
+USER AND GROUPS
+whoami                              who is currently connected user
+who                                 who is connected to system - all of them
+w                                   who is connected to system - all of them + more info
+id                                  currently id of user, group id, ...
+groups                              groups to which current user belongs to
+adduser <name>                      add a user
+deluser --remove-home <name>        remove a user with its home directory
+chmod                               change file flags 
+    +x                              add executable permission for all
+    u+x                             add executable permission for owner
+    u+rwx                           add read, write, executable permission for owner
+    g+x                             add executable permission for group
+    o+x                             add executable permission for others
+    a+x                             add executable permission for all
+    o-x                             remove executable permission for others
+    u=x                             set exactly only for user executable permission
+chown <username> <path>             change owner of the file
+chown <username>:<group> <path>     change owner and group of the file
+chgrp <group> <path>                change group

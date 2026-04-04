@@ -1,0 +1,48 @@
+ls -l =>
+-rw-r--r-- 1 root root       1523 Feb 10 00:34 usb_modeswitch.conf
+drwxr-xr-x 2 root root       4096 Feb 10 00:34 usb_modeswitch.d
+lrwxrwxrwx 1 root root         16 Feb 10 00:26 vconsole.conf -> default/keyboard
+
+1. type of the file
+    -       file
+    d       directory
+    l       link
+
+2. - 4.
+rwx     owner permissions or -
+
+5. - 7.
+rwx     group permissions or -
+
+8. - 10.
+rwx     other permissions or -
+
+11.
+#       number of hard links
+
+12.
+root    user owner
+
+13.
+root       group owner
+
+14.
+1523        size in bytes
+
+15.
+Feb 10 00:34    modification date
+
+16.
+usb_modeswitch.conf     filename
+
+
+Number mode of RWX
+------------------------------------------------
+7 	4 + 2 + 1 	rwx 	read, write and execute
+6 	4 + 2 	    rw- 	read and write
+5 	4     + 1 	r-x 	read and execute
+4 	4 	        r-- 	read only
+3 	    2 + 1 	-wx 	write and execute
+2 	    2 	    -w- 	write only
+1 	        1 	--x 	execute only
+0 		--- 	none 
