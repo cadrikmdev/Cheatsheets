@@ -1,0 +1,26 @@
+vi or vim  - it is everywhere
+
+vi
+    i       insert mode at cursor position
+    o       insert mode at the new line, bellow cursor position
+    esc     normal mode (commands)
+        j, k    moving cursor down, up
+        h, l    moving cursor left, right
+    x       delete char under cursor
+    dd      delete whole line
+    u       undo last change
+    /<text> search for a text like a man page n next occurence, N previous
+    gg      top of the file
+    G       bottom of the file
+
+
+:q      quit
+:w      write
+:wq     write and quit
+:q!     quit, discard changes
+
+vimtutor    - tutorial to practice vim controls
+
+alternatives:
+nano
+neovim - supports markdown and renders it

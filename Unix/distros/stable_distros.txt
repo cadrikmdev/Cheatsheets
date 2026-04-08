@@ -1,0 +1,7 @@
+Ubuntu
+    - snap is bad
+    - some controversal decision
+    
+Linux Mint
+    - comes from ubuntu
+    - better choice

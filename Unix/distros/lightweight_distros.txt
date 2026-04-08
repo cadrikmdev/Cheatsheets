@@ -1,0 +1,7 @@
+antix linux  150MB, Debian
+Linux Lite - 200MB ram
+MX with Fluxbox has 500 MB ram usage
+Bodhi Linux mockshaw
+Peppermint OS - fine for web based users
+Mint xfce 700MB ram
+Endeavour deb, arch based, rolling

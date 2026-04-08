@@ -16,6 +16,7 @@ tree -L 2                                       shows dir tree for depth of 2
 
 htop                                            resource usage and processes
 ps -aux					                        processes
+sudo killall -u username                        kill all processes used by user
 
 mkdir                                           create directory
     -p projects/work/pipes                      creates directory with parent directories if needed
@@ -98,3 +99,9 @@ chmod                               change file flags
 chown <username> <path>             change owner of the file
 chown <username>:<group> <path>     change owner and group of the file
 chgrp <group> <path>                change group
+sudo                                elevated privilegues
+    -u <username>                   do as user XY
+    -i                              change to root user
+    -k                              forget sudo passwrod immediatelly
+usermod -aG <group name> <user>     add user to group (need to reload session)
+

@@ -1,0 +1,6 @@
+raspberry pi os
+fyde os - web based apps mainly - good for TV 
+Twister OS - based on raspberry pi
+Armbian
+Ubuntu
+DietPi - lightweight

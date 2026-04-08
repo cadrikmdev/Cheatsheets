@@ -1,0 +1,2 @@
+https://github.com/yt-dlp/yt-dlp    download videos from youtube
+https://smarttubeapp.github.io/     app replacement for youtube
