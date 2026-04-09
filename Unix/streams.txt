@@ -1,0 +1,26 @@
+Stream  | file descriptor | Description |
+-----------------------------------------------
+stdin   | 0               | standard input (keyborad, file)
+stdout  | 1               | standard output (terminal, file)
+stderr  | 2               | standard error (terminal)
+
+
+Piping (chaining)
+-----------------------
+<output> | <as a input>
+
+Redirecting output
+------------------------
+<output> > to some file overwrite   // redirects only stdout output to a file overwrite
+<output> >> to some file append     // redirects only stdout output to a file append
+<output> 2> to some file append     // redirects only error output to a file overwrite
+<output> 2>> to some file append     // redirects only error output to a file append
+<output> &> to some file append     // redirects all output to a file overwrite
+<output> &>> to some file append     // redirects all output to a file append
+<output> >> stdout.txt 2> stderr.txt    // redirects stdout to stdout.txt file and stderr to stderr.txt file  
+
+> /dev/null  // discarding output
+
+ Redirecting input
+------------------------
+<command> <input>

@@ -7,6 +7,8 @@ lrwxrwxrwx 1 root root         16 Feb 10 00:26 vconsole.conf -> default/keyboard
     -       file
     d       directory
     l       link
+    b       
+    c       
 
 2. - 4.
 rwx     owner permissions or -

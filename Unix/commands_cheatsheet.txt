@@ -74,6 +74,24 @@ head                                            start of the file
 tail                                            end of the file
     -f                                          follow new lines
 
+FILTERS
+sort
+    -h                                          sort according to size, asc
+    -r                                          reverse order (desc)
+uniq                                            remove duplicates
+    -c                                          counts duplicates occurences
+cut                                             cut column
+    -d <symbol>                                 delimiter
+    -f#,#                                       numbers of collumns e.g. -f1,2
+    -c1-5                                       cut characters 1 to 5
+tr 'A-Z' 'a-z'                                  translate characters A to a, ... 
+tr ' ' '\n'                                     replace space to new line
+tr -d '0-9'                                     delete (remove) digits from string
+tee <filename>                                  writes to file and screen the same time
+<output> | xargs <command>                      put output as a next arguments to command 
+<output> | xargs -n 1 <command>                 put each line as a next arguments to command 
+
+
 PACKAGE MANIPULATION (deb)
 apt install             
 apt update 
