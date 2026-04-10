@@ -1,0 +1,58 @@
+Process
+
+PID     own id
+PPID    parent process id of process which started it
+owner   e.g. 'root'
+state   running, sleeping, stopped, etc.
+
+COMMANDS
+----------------------------------------------------------------
+ps 
+    -a  all processes
+    -u  user oriented format
+    -x  processes without a terminal
+pgrep <name>  - processes grep but without grep and returns ID of process with given name
+
+top        - older version of htop, but everywhere
+    k       kill
+    M       sort by memory
+    P       sort by CPU
+    h       help
+    q       quit
+
+btop                -  htop with muscles
+kill <pid>          - sigterm to politely kill process
+kill -9 <pid>       - force kill
+killall <processname>   - kill by name process
+pkill -f "patern"       - kill processes matching pattern
+sleep 60 &              - sleep process on the background with & so you vae terminal immediatelly responsive
+jobs                    - see processes on background
+fg %<job id>            - put process to foreground
+bg                      - put process to background
+
+ctrl + c                - cancel the process
+ctrl + z                - stop the process and can be resumed on background
+
+pstree                  - shows process tree
+systemctl               - interact with system services
+            status <name>      - see status of service
+            start <name>       - start a service
+            stop <name>        - stop a service
+            restart <name>     - restart a service
+            is-enabled <name>  - check whether is service enabled at boot
+            enable <name>      - enable a service at boot
+            disable <name>     - disable a service at boot
+            reboot             - reboot system - cleaner way than sudo reboot
+            list-units  --type=service      - list all services
+
+journalctl                      - all system logs
+            -f                  - follow system logs
+            --since "1 hour ago"    - see logs for last hour
+            -b                  - only logs for current boot
+            -u <name>           - only logs for service named
+
+
+
+SYSTEMD
+---------------
+initial system process on ubuntu server / it runs other processes and it is root parent process

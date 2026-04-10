@@ -66,7 +66,7 @@ wc                                              word count - lines words chars r
 du                                              disk usage
     -sh <path>                                  directory stats (sumarize, human readable)
     --max-depth=1                               disk usage of those files/directories in directory
-df                                              disk free - how much space is left on each drive
+df  -h                                            disk free - how much space is left on each drive (-h human readable)
 
 cat                                             file content or more files
 less                                            file content with paging
@@ -123,3 +123,9 @@ sudo                                elevated privilegues
     -k                              forget sudo passwrod immediatelly
 usermod -aG <group name> <user>     add user to group (need to reload session)
 
+SYSINFO
+uname -a                            kernel information
+uptime                              how much time does it run
+free -h                             memory usage
+lscpu                               cpu info
+lsblk                               block devices - disks, ...

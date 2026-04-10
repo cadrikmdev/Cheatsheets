@@ -3,3 +3,4 @@ neofetch (fastfetch)        system information
 htop                        resource usage and processes
 nano 					    text editor, much better than vi(m)
 busybox                     a lot of functionalities in one binary for saving space
+btop                        top, htop
