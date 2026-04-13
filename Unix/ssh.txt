@@ -1,0 +1,35 @@
+SSH client
+    ssh from client machine
+SSH server
+    sshd daemon
+Encryption
+    encryption algorithm to encrypt messages
+
+
+ssh-keygen -t ed25519 -C <email_address>    - generate SSH pair (private/public)
+ssh-add ~/.ssh/<filename>                   - add private key filename to the local agent
+ssh-add -L                          - list of all added keys
+ssh-copy-id <user to copy as>@<address of local machine to copy to>       -  copy all keys from machine to remote machine
+- manual method if ssh-copy-id is not available: cat ~/.ssh/id_ed25519.pub | ssh user@192.168.100.71 "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
+ssh -v <username>@<hostname>        - ssh to server with verbose logging
+
+SERVER CONFIGURATION OF SSH
+/etc/ssh/sshd_config            - configuration of ssh
+PasswordAuthentication no
+PubkeyAuthentication yes
+
+sudo systemctl restart sshd     - restart ssh, but then verify from new session before exiting current one to not lock yourself out 
+
+CLIENT CONFIGURATION
+~/.ssh/config
+chmod 600 ~/.ssh/config
+Host <myserverconfigname>
+    HostName <92.168.1.2>
+    user <username>
+    IdentityFile <~/.ssh/id_ed25519>
+
+then instead of ssh user@192.168.1.2 just ssh <myserverconfigname>
+
+scp file.txt user@server:/home/user/    - copy local file to remote server
+scp user@server:var/log/syslog ./       - copy remote file to local directory
+scp -r directory/ user@server:/home/user/   - copy whole directory recursively

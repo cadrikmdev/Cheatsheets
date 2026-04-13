@@ -1,0 +1,22 @@
+ip 
+    addr        - ip address
+    a           - ip address
+    route       - routing to internet
+
+hostname    - machine hostname
+hostnamectl - configuration of hostname and details
+
+ping <ip address or hostname>   - pinging host
+    -c 10 <host>                - pinging 10 times
+
+curl <webaddress>           - displays html content
+curl -I <webaddress>        - get just the headers
+curl -O <webaddress>        - downloads to a file with using remote filename
+curl -o <filename> <webaddress>        - downloads to a file with using given filename
+
+wget <webaddress>           - downloads to a file
+
+ss -tuln                    - t TCP, u UDP, l Listening (server) socket, n Port numbers
+ss -tun                     - established connections only
+
+/etc/hosts  - file containing all addresses aliases
