@@ -1,0 +1,11 @@
+https://www.navidrome.org
+https://pimylifeup.com/raspberry-pi-navidrome/
+
+prereq: installed docker
+
+sudo mkdir -p /opt/stacks/navidrome/data
+sudo chown $USER: /opt/stacks/navidrome/data
+cd /opt/stacks/navidrome
+sudo nano compose.yaml
+- copy file and replace path to Music
+docker compose up -d
