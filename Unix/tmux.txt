@@ -1,0 +1,38 @@
+Tmux is a terminal multiplexer. It lets you run multiple terminal sessions inside one window, and keeps them running even when you disconnect.
+
+It ensures that session is not lost when connection is lost.
+
+Multiple panes, tabs
+
+tmux    - enter the tmux mode and creates session
+tmux new -s <name>      - creates new tmux session with name
+
+tmux attach           - attach back to the most recent session
+            -t <0>    - attach to specified session by id (0)
+            -t <name> - attach to specified session by name
+tmux ls         - list of sessions
+exit            - exits from tmux session
+tmux kill-session -t <id or name>   - kill specified session
+
+ctrl+b          - enter to command mode inside tmux
+------------------------------------------------------
+d               - detach from session
+
+WINDOWS - listed at the bottom in the bar
+-------
+c               - create new window
+n               - switch to next window
+p               - switch to previous window
+#               - switch to window number #
+,               - rename window
+&               - close window
+
+PANES  - separated by line
+--------
+"               - split horizontal
+%               - split vertical
+o               - switching panes
+<arrow>         - move between panes
+x               - close
+z               - toggle fullscreen
+ctrl <arrow>    - resize pane
