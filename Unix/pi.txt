@@ -1,0 +1,37 @@
+webs
+https://pimylifeup.com/raspberry-pi-index/
+
+
+4k Video
+
+This did not helped:
+
+/boot/firmware/config.txt
+add at the end:
+-------------------------------------------------
+# Added by help from net to support 4K
+#-------------------------------------
+hdmi_force_hotplug=1
+
+# Force 4K
+#hdmi_group=1
+#hdmi_mode=95
+#95 = 4K @ 30Hz (most reliable)
+#97 = 4K @ 60Hz
+
+# Optional: enable 4K60
+hdmi_enable_4kp60=0
+hdmi_drive=2
+--------------------------------------------------
+
+This helped:
+
+/boot/firmware/cmdline.txt
+add at the end of line:
+video=HDMI-A-1:3840x2160@30
+
+
+No solution yet
+HDMI Audio
+sudo apt install pipewire wireplumber pipewire-audio
+sudo reboot

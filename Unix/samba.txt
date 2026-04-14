@@ -1,0 +1,68 @@
+instal samba
+check if service is running
+set configuration
+set samba user password: sudo smbpasswd -a <username>
+
+
+/etc/samba/smb.conf
+-------------------------------------------
+[global]
+netbios name = <NAME>
+server string = <some name>
+workgroup = WORKGROUP
+
+# Required for Windows discovery
+wins support = yes
+name resolve order = bcast host
+
+# Networking performance
+socket options = TCP_NODELAY
+server multi channel support = yes
+
+# Async I/O (good for Pi)
+aio read size = 1
+aio write size = 1
+
+# Use sendfile (zero-copy)
+use sendfile = yes
+
+# Disable slow/legacy features
+load printers = no
+printing = bsd
+disable spoolss = yes
+
+# Modern SMB protocols
+server min protocol = SMB2
+server max protocol = SMB3
+
+# Networking
+hosts allow = 192.168.1.
+
+# Allow discovery
+local master = yes
+preffered master = yes
+os level = 255
+
+
+[name]
+Comment = some comment
+Path = <your path to folder>
+browseable = yes
+writeable = yes
+read only = no
+only guest = no
+create mask = 0777
+directory mask = 0777
+public = no
+guest ok = no
+
+#Performance
+write cache size = 524288
+strict sync = no
+sync always = no
+
+---------------------------------
+
+sudo systemctl restart smbd
+sudo systemctl restart nmbd
+

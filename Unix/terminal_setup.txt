@@ -1,0 +1,13 @@
+.bashrc
+    - interactive non-login shells
+    - aliases, prompt, shell behavior
+.profile
+    - login shells 
+    - enviroment variables, PATH
+
+
+Starship
+    curl -sS https://starship.rs/install.sh | sh - for installation
+    
+
+.vimrc

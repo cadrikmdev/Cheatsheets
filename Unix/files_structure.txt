@@ -10,3 +10,5 @@
 /mnt    - storage (filesystems mounted)
 /tmp    - temporary files
 /usr/bin    - commands for user
+
+.<filename> - hidden file
