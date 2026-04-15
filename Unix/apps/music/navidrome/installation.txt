@@ -1,6 +1,8 @@
 https://www.navidrome.org
 https://pimylifeup.com/raspberry-pi-navidrome/
 
+Music streaming service
+
 prereq: installed docker
 
 sudo mkdir -p /opt/stacks/navidrome/data
