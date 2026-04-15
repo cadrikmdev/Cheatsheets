@@ -1,0 +1,12 @@
+lsblk -f    - display mounted volumes
+sudo umount <mount path> - umount volume
+
+add mount point with PARTUUID to /etc/fstab
+PARTUUID=0005f107-01 <complete mount dir path> ntfs defaults,nofail,x-systemd.automount,x-systemd.device-timeout=30,umask=000 0 0
+PARTUUID=a910d7cb-01 <complete mount dir path> ntfs defaults,nofail,x-systemd.automount,x-systemd.device-timeout=30,umask=000 0 0
+
+systemctl daemon-reload     - reload mounted devices service
+sudo mount -a               - auto mount according to config
+sudo ntfslabel /dev/sda1 NEW_LABEL  - change label for NTFS volume
+sudo ntfsfix /dev/sda1      - fix to unmount
+sudo fuser -vm /dev/sda1    - check some process which locked it
