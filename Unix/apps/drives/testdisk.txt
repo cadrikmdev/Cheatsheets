@@ -1,0 +1,4 @@
+Analysis of HDDs
+
+sudo apt-get install testdisk
+sudo testdisk

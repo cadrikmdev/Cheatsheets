@@ -1,0 +1,11 @@
+https://github.com/sentriz/gonic
+
+clients:
+https://www.navidrome.org/apps/?platform=android%2Cwindows&api=subsonic%2Copensubsonic&oss=true&free=true
+on android tested: substreamer
+on win tested: Psysonic
+
+for RaspberryPi
+https://hub.docker.com/r/ugeek/gonic
+https://ugeek.github.io/blog/post/2020-05-06-gonic-el-mejor-y-mas-ligero-servidor-de-musica-con-api-subsonic.html
+admin/admin

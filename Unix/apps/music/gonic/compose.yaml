@@ -1,0 +1,13 @@
+version: "2.4"
+services:
+  gonic:
+    image: ugeek/gonic
+    container_name: gonic
+    ports:
+      - "88:80"
+    volumes:
+      - /media/pi/MyPassport/Music:/music
+      - $HOME/Docker/Gonic/data:/data
+    environment:
+      - GONIC_SCAN_INTERVAL=0
+    restart: unless-stopped

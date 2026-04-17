@@ -1,0 +1,8 @@
+https://pimylifeup.com/raspberry-pi-immich/
+
+sudo mkdir -p /opt/stacks/immich
+cd /opt/stacks/immich
+sudo wget https://github.com/immich-app/immich/releases/latest/download/docker-compose.yml
+sudo wget -O .env https://github.com/immich-app/immich/releases/latest/download/example.env
+sudo nano .env
+UPLOAD_LOCATION=./library - change to real external drive location
