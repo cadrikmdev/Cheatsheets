@@ -1,9 +1,13 @@
 lsblk -f    - display mounted volumes
 sudo umount <mount path> - umount volume
 
+sudo blkid
+
 add mount point with PARTUUID to /etc/fstab
 PARTUUID=0005f107-01 <complete mount dir path> ntfs defaults,nofail,x-systemd.automount,x-systemd.device-timeout=30,umask=000 0 0
 PARTUUID=a910d7cb-01 <complete mount dir path> ntfs defaults,nofail,x-systemd.automount,x-systemd.device-timeout=30,umask=000 0 0
+PARTUUID=f45cb554-01 <complete mount dir path> exfat defaults,nofail,x-systemd.automount,x-systemd.device-timeout=30,umask=000 0 0
+LABEL="Photos1500" UUID="762F-E4B6" BLOCK_SIZE="512" TYPE="exfat" PARTUUID="f45cb554-01"
 
 systemctl daemon-reload     - reload mounted devices service
 sudo mount -a               - auto mount according to config

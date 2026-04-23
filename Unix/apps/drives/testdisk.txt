@@ -2,3 +2,6 @@ Analysis of HDDs
 
 sudo apt-get install testdisk
 sudo testdisk
+
+sudo apt-get install smartmontools
+sudo smartctl -a /dev/sda - check smart health
